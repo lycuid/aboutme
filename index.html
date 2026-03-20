@@ -100,14 +100,18 @@ vim:et:ts=4:sw=4
             background-color: var(--color-secondary);
         }
 
-        #skills {
-            margin-top: 1rem;
+        #skills #skills-container {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-column-gap: 20px;
         }
 
         #skills ul {
             display: flex;
             flex-wrap: wrap;
             gap: 0rem 1.5rem;
+            margin-block-start: 0;
+            padding: 0;
         }
 
         .social-icon {
@@ -214,53 +218,48 @@ vim:et:ts=4:sw=4
             <legend>
                 <h3>Summary</h3>
             </legend>
-            <small>
-                <ul>
-                    <li>Software engineer, with most of the professional experience in building web applications, focusing on scalable software, database architecture and system design.</li>
-                    <li>Mainly work with linux based systems, and enjoy writing user-centric (day-to-day) tools (replacing mainstream software).</li>
-                    <li>Enjoy solving programming puzzles and challenges, and also cleared a secret coding challenge by <strong><span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></strong> called <i>"foobar"</i> (2018) twice (2021).</li>
+            <ul>
+                <li>Software engineer specializing in backend systems and distributed fault-tolerant infrastructure.</li>
+                <li>Experienced in designing and operating high-scale distributed systems handling millions of requests per min.</li>
+                <li>Hands-on with event-driven architecture and low latency messaging pipeline.</li>
+                <li>Custom Linux tools and system utilities (terminal, window manager, system monitoring etc, see&nbsp;<a target="_blank" href="https://github.com/lycuid">github</a>).</li>
             </ul>
-            <hr />
-            All my project can be found on my&nbsp; <a target="_blank" href="https://github.com/lycuid">github</a>
-            </small>
         </fieldset>
 
         <fieldset id="skills" class="bordered">
             <legend>
                 <h3>Skills</h3>
             </legend>
-            <small>
-                <strong>Professional</strong><br />
+            <small id="skills-container">
+                <strong>Languages</strong>
                 <ul>
                     <li>C</li>
                     <li>Golang</li>
                     <li>Python</li>
                     <li>Typescript</li>
                     <li>Javascript</li>
-                    <li>Database architecture</li>
-                    <li>Docker</li>
-                    <li>HTMX</li>
-                    <li>System design</li>
-                    <li>Web development</li>
-                    <li>NodeJs</li>
-                    <li>ReactJs</li>
-                    <li>Postgresql</li>
-                    <li>AWS</li>
-                </ul>
-                <hr />
-                <strong>Other</strong><br />
-                <ul>
-                    <li>Haskell</li>
-                    <li>Rust</li>
-                    <li>Linux software</li>
-                    <li>Angularjs</li>
-                    <li>Graphql</li>
-                    <li>Sqlite</li>
                     <li>Guile scheme</li>
-                    <li>Erlang</li>
-                    <li>C++</li>
-                    <li>Racket scheme</li>
-                    <li>Devops</li>
+                    <li>Haskell</li>
+                    <li>PHP</li>
+                    <li>Rust</li>
+                </ul>
+                <strong>Infra</strong>
+                <ul>
+                    <li>AWS</li>
+                    <li>Docker</li>
+                    <li>SQL</li>
+                    <li>Redis</li>
+                    <li>GCP</li>
+                    <li>Elasticsearch</li>
+                    <li>RabbitMQ</li>
+                    <li>Linux primitives (IPC: socket, fifo etc)</li>
+                </ul>
+                <strong>Systems</strong>
+                <ul>
+                    <li>Distributed systems</li>
+                    <li>Linux systems programming</li>
+                    <li>Messaging pipelines</li>
+                    <li>Web development</li>
                 </ul>
             </small>
         </fieldset>
@@ -276,105 +275,85 @@ vim:et:ts=4:sw=4
              <section>
                 <div class="kv highlight">
                     <strong>Netcore Cloud Pvt. Ltd.</strong>
-                    <code>Sep 24 - present</code>
+                    <code>Sep 24 - Feb 26 (1 year 6 months)</code>
                 </div>
                 <br />
-                <u>Senior Software Engineer (Grade 6)</u>
-                <br />
-                <small>[TEAM]</small>
+                <u>Senior Software Engineer</u>
                 <ul>
                     <li>
-                        Part of the core team responsible for building and maintaining an in-house Mail Transfer Agent (MTA), a critical component of the company’s email infrastructure, powering over <strong><i><u>80%</u></i></strong> of company revenue as part of its communication platform service.</li>
+                        Built, maintained and optimized a Mail Transfer Agent (MTA), a critical component of the company’s email infrastructure, powering over <strong><i><u>80%</u></i></strong> of company revenue as part of its communication platform, which powered <strong><u>~75%</u></strong> of all emails sent throughout India and <strong><u>~50%</u></strong> throughout Asia.</li>
                     </li>
-                    <li>Improved whatsapp's delivery pipeline with new internal features (like retrying certain failed messages), improving deliverability by about <strong><i><u>10%</u></i></strong>, resulting in increased revenue.</li>
-                </ul>
-                <small>[INDEPENDENT]</small>
-                <ul>
-                    <li>Worked on improving the reliability, performance, scalability and trafic monitoring of the in-house MTA.</li>
-                    <li>Integrated payment gateway on the whatsapp platform service.</li>
-                    <li>Scheduled report generation and delivery for the sms platform service.</li>
+                    <li>Built high availability, low latency system software to deliver bulk emails, scaling up to <strong><u><i>500 million</i></u></strong> requests, for enterprise clients like <strong><i>State Bank of India</i></strong>, <strong><i>Flipkart</i></strong>, <strong><i>Axis Bank</i></strong> etc.</li>
+                    <li>Developed algorithms for email inboxing, while maintaining an average throughput of <strong><u><i>~45-50 million</i></u></strong> emails per hour.</li>
+                    <li>Designed and developed a low latency, highly concurrent event management pipeline for the WhatsApp platform, which led to higher throughput and performance increase in delivery, webhook processing/delivery, and real-time reporting.</li>
+                    <li>Developed features for WhatsApp's message delivery pipeline, improving deliverability by <strong><i><u>~30-45%</u></i></strong>, resulting in increased revenue, and a direct impact on enterprise clients like <strong><i>Reserve Bank of India</i></strong>, <strong><i>Bajaj Finserv District Ltd</i></strong>, <strong><i>The Souled Store</i></strong> etc.</li>
                 </ul>
                 <div class="padded">
                     Languages: <code>Golang</code>
-                    Other: <code>Docker (\w compose) | Redis | RabbitMQ | GCP | Elasticsearch | MySQL | Postgresql</code>
+                    Other: <code>Docker \w compose | Redis | RabbitMQ | GCP | Elasticsearch | MySQL | Postgresql</code>
                 </div>
-                <br />
             </section>
+            <br />
 
             <section>
                 <div class="kv highlight">
                     <strong>ApeLabs (Rosnil technologies Pvt. Ltd.)</strong>
-                    <code>May 23 - Aug 24 (1.3 years)</code>
+                    <code>Sep 22 - Aug 24 (2 years)</code>
                 </div>
                 <br />
-                <u>Lead Software Engineer</u> (1.3 years)
-                <br />
-                <small>[TEAM]</small>
+                <u>Lead Software Engineer</u> (1 year 4 months)
                 <ul>
-                    <li>Company Landing page and front-end for online store (Nextjs, Framer-motion, tailwind).</li>
-                </ul>
-                <small>[INDEPENDENT]</small>
-                <ul>
-                    <li>Reviewing code, handling deployment, and managing/mentoring a team.</li>
-                    <li>An Independent 'Identity' service for user authentication, identity and profile management (django \w golang microservice).</li>
-                    <li>Entire backend infrastructure, database architecture and system design for an online ecommerce store (django \w golang microservices).</li>
-                    <li>Automating Shipment queues and customer communication (django, AWS SQS, celery).</li>
-                    <li>In-house admin dashboard for the online store, (django, HTMX).</li>
-                    <li>Server maintainence, deployment pipeline etc for the online store (AWS, Docker (\w compose))</li>
+                    <li>Led a team (4 frontend developers) into creating landing page and online store (Next.js, Framer-motion, Tailwind).</li>
+                    <li>Services for managing inventory, authentication, identity, profile, email/sms communication (Django \w golang microservices).</li>
+                    <li>Entire backend infrastructure, database architecture and system design for an online e-commerce store (Django \w golang microservices).</li>
+                    <li>Automating Shipment queues and customer communication (Django, AWS SQS, celery).</li>
+                    <li>In-house admin dashboard for the online store, (Django, HTMX).</li>
+                    <li>Server maintenance, deployment pipeline etc for the online store (AWS, Docker \w compose)</li>
                 </ul>
                 <div class="padded">
-                    Front-end: <code>NextJs | Typescript | Javascript | Tailwind | HTMX | Framer motion</code>
+                    Front-end: <code>Next.js | Typescript | Javascript | Tailwind | HTMX | Framer motion</code>
                     Back-end: <code>Django 4 | Python 3 | Golang | gRPC | Django REST Framework.</code>
-                    Other: <code>AWS | Docker (\w compose) | React native | Redis | RabbitMQ | Postgresql.</code>
+                    Other: <code>AWS | Docker \w compose | React native | Redis | RabbitMQ | Postgresql.</code>
                 </div>
                 <br />
+                <u>Software Engineer Consultant</u> (8 months)
+                <ul>
+                    <li>Involved in designing software architecture for an e-commerce platform</li>
+                    <li>Code reviews and managing third party software engineering teams.</li>
+                </ul>
             </section>
             <br />
 
             <section>
                 <div class="kv highlight">
                     <strong>Care24 (Aegis Care Advisors Pvt. Ltd.)</strong>
-                    <code>Sep 17 - Oct 19 (~2 years)</code>
+                    <code>Sep 17 - Oct 19 (2 years 1 month)</code>
                 </div>
                 <br />
                 <u>Senior Software Engineer</u> (2 years)
                 <br />
-                <small>[TEAM]</small>
                 <ul>
-                    <li>A Grading system which led to automating customer bookings (python, reactjs).</li>
-                    <li>Managing two small teams (project management, code reviews).</li>
-                    <li>Mentoring developers and interns.</li>
-                </ul>
-                <small>[INDEPENDENT]</small>
-                <ul>
-                    <li><span>Optimizing primary VPS leading to monthly cost reduction upto <strong><i><u>60%</u></i></strong> (AWS).</span></li>
-                    <li>Complete devops, deployment pipeline and backend dev for 2 indepedently launched apps (AWS, python, BitBucket).</li>
-                    <li>Email, SMS, IVR, Ticketing automation (python, js, third party integrations).</li>
-                    <li>Third party integrations which included payment gateway, background verification etc (python, third party integration).</li>
-                    <li>In-house email (gmail) management tool (GSuite, Gmail API).</li>
+                    <li>Led multiple small engineering teams (2-3 engineers each) for enhancing and maintaining internal tooling.</li>
+                    <li>Built a grading system which led to <strong><u><i>fully automated</i></u></strong> customer bookings workflow.</li>
+                    <li>Optimized primary VPS leading to monthly cost reduction up to <strong><i><u>60%</u></i></strong> (AWS).</li>
+                    <li>Email, SMS, IVR, Ticketing automation and other third party integrations like payment gateway, background verification etc (python, js).</li>
+                    <li>Built In-house email management tool using gmail api.</li>
+                    <li>Complete devops, deployment pipeline and backend dev for 2 independently launched apps (AWS).</li>
                 </ul>
                 <div class="padded">
-                    Front-end: <code>Reactjs | Typescript | Javascript | AngularJs | Angular 8.</code>
+                    Front-end: <code>ReactJs | Typescript | Javascript | AngularJs | Angular 8.</code>
                     Back-end: <code>Django 1.8/2.2 | Python 2/3 | Django REST Framework.</code>
                     Other: <code>AWS | Apollo2/GraphQL | NodeJs | MongoDB | Redis | RabbitMQ.</code>
                 </div>
                 <br />
                 <u>Full-Stack Web Developer</u> <small>(~1.5 months)</small>
-                <br />
-                <small>[TEAM]</SMALL>
                 <ul>
-                    <li>Maintaining the legacy code</li>
-                    <li>refactoring, testing etc (python, js).</li>
-                    <li>Creating REST APIs</li>
-                </ul>
-                <small>[INDEPENDENT]</small>
-                <ul>
-                    <li><span>Business Metric visualization tool (<u><i>used by operation and marketing team</i></u>).</span></li>
-                    <li><span>A <i>Simple</i> general purpose tabular report generation tool (<i><u><b>the most used</b></u> app by every team</i>).</span></li>
-                    <li><span>Web interface that automated about 40% work, while adding a better structure (<u><i>used by finance team</i></u>).</span></li>
+                    <li><span>Business Metric visualization tool (<u>used by operation and marketing team</u>).</span></li>
+                    <li><span>A Simple general purpose tabular report generation tool (<i><u><strong>the most used</strong></u> app by every team</i>).</span></li>
+                    <li><span>Restructured database architecture for payment calculations and aggregation automating <strong><u><i>~40%</i></u></strong> work (<u>used by finance team</u>).</span></li>
                 </ul>
                 <div class="padded">
-                    Front-end: <code>Reactjs | AngularJs | JQuery | Javascript.</code>
+                    Front-end: <code>ReactJs | AngularJs | JQuery | Javascript.</code>
                     Back-end: <code>Django 1.8 | Python 2 | Django REST Framework.</code>
                     Other: <code>Postgresql.</code>
                 </div>
@@ -384,12 +363,12 @@ vim:et:ts=4:sw=4
             <section>
                 <div class="kv highlight">
                     <strong>Freelancer / Self employed (as a student).</strong>
-                    <code>Mar 12 - Sep 17 (&gt; 5 years)</code>
+                    <code>Mar 14 - Sep 17 (&gt; 3 years)</code>
                 </div><br />
                 <u>Script Writer and Web/Desktop App Developer</u>
                 <ul>
                     <li>Landing pages for events by various local communities.</li>
-                    <li>Website with voting mechanism for various festivals (local).</li>
+                    <li>Website with voting mechanism for ganpati chaturthi.</li>
                     <li>Desktop GUI application for some local businesses.</li>
                     <li>Landing page with Custom CMS dashboard from ground up, for a startup (https://k3technologies.co.in).</li>
                 </ul>
@@ -399,7 +378,6 @@ vim:et:ts=4:sw=4
             </section>
         </fieldset>
     </main>
-    <br />
     <hr />
 
     <footer>

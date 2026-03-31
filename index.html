@@ -14,7 +14,7 @@ vim:et:ts=4:sw=4
     <style>
         :root {
             --color-primary: #393939;
-            --color-secondary: #dfdfdf;
+            --color-secondary: #f1f1f1;
             --color-icon: #535c68;
         }
 
@@ -86,8 +86,8 @@ vim:et:ts=4:sw=4
             text-decoration: underline;
         }
 
-        fieldset > legend > strong {
-            font-size: medium;
+        fieldset > legend > :first-child {
+            margin: .5rem 0 .15rem;
         }
 
         .kv {
@@ -168,8 +168,8 @@ vim:et:ts=4:sw=4
                         <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
                     </svg>
                     &nbsp;
-                    <a href="https://linkedin.com/in/abhishek-kadam-26a06170">
-                        https://linkedin.com/in/abhishek-kadam-26a06170
+                    <a href="https://www.linkedin.com/in/abhishek-kadam-26a06170">
+                        https://www.linkedin.com/in/abhishek-kadam-26a06170
                     </a>
                 </code>
                 <code>
@@ -219,10 +219,10 @@ vim:et:ts=4:sw=4
                 <h3>Summary</h3>
             </legend>
             <ul>
-                <li>Software engineer specializing in backend systems and distributed fault-tolerant infrastructure.</li>
-                <li>Experienced in designing and operating high-scale distributed systems handling millions of requests per min.</li>
-                <li>Hands-on with event-driven architecture and low latency messaging pipeline.</li>
+                <li>Software engineer specializing in backend systems and event-driven fault-tolerant infrastructure.</li>
+                <li>Experienced in designing and operating high-scale distributed systems handling millions of requests per minute at scale.</li>
                 <li>Custom Linux tools and system utilities (terminal, window manager, system monitoring etc, see&nbsp;<a target="_blank" href="https://github.com/lycuid">github</a>).</li>
+                <li>Enjoy programming puzzles and challenges. Cleared the secret, invite-only coding challenge by <strong><span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></strong> called <u><i>google foobar</i></u>, twice (2018, 2021).</li>
             </ul>
         </fieldset>
 
@@ -238,28 +238,26 @@ vim:et:ts=4:sw=4
                     <li>C</li>
                     <li>Typescript</li>
                     <li>Javascript</li>
-                    <li>Guile scheme</li>
-                    <li>Haskell</li>
-                    <li>PHP</li>
                     <li>Rust</li>
+                    <li>Haskell</li>
+                    <li>Guile scheme</li>
                 </ul>
                 <strong>Infra</strong>
                 <ul>
                     <li>AWS</li>
+                    <li>Linux</li>
                     <li>Docker</li>
                     <li>SQL</li>
                     <li>Redis</li>
                     <li>GCP</li>
                     <li>Elasticsearch</li>
                     <li>RabbitMQ</li>
-                    <li>Linux primitives (IPC: socket, fifo etc)</li>
                 </ul>
                 <strong>Systems</strong>
                 <ul>
                     <li>Distributed systems</li>
                     <li>Linux systems programming</li>
-                    <li>Messaging pipelines</li>
-                    <li>Web development</li>
+                    <li>Web development (Full-Stack)</li>
                 </ul>
             </small>
         </fieldset>
@@ -281,16 +279,16 @@ vim:et:ts=4:sw=4
                 <u>Senior Software Engineer</u>
                 <ul>
                     <li>
-                        Built, maintained and optimized a Mail Transfer Agent (MTA), a critical component of the company’s email infrastructure, powering over <strong><i><u>80%</u></i></strong> of company revenue as part of its communication platform, which powered <strong><u>~75%</u></strong> of all emails sent throughout India and <strong><u>~50%</u></strong> throughout Asia.</li>
+                        Involved in building and optimizing a Mail Transfer Agent (MTA), a critical component of the company’s email infrastructure, powering over <strong><i><u>80%</u></i></strong> of company revenue as part of its communication platform, which powered <strong><u>~75%</u></strong> of all emails sent throughout India and <strong><u>~50%</u></strong> throughout Asia.</li>
                     </li>
-                    <li>Built high availability, low latency system software to deliver bulk emails, scaling up to <strong><u><i>500 million</i></u></strong> requests, for enterprise clients like <strong><i>State Bank of India</i></strong>, <strong><i>Flipkart</i></strong>, <strong><i>Axis Bank</i></strong> etc.</li>
-                    <li>Developed algorithms for email inboxing, while maintaining an average throughput of <strong><u><i>~45-50 million</i></u></strong> emails per hour.</li>
-                    <li>Designed and developed a low latency, highly concurrent event management pipeline for the WhatsApp platform, which led to higher throughput and performance increase in delivery, webhook processing/delivery, and real-time reporting.</li>
-                    <li>Developed features for WhatsApp's message delivery pipeline, improving deliverability by <strong><i><u>~30-45%</u></i></strong>, resulting in increased revenue, and a direct impact on enterprise clients like <strong><i>Reserve Bank of India</i></strong>, <strong><i>Bajaj Finserv District Ltd</i></strong>, <strong><i>The Souled Store</i></strong> etc.</li>
+                    <li>Scaled the MTA for high availability and low latency to deliver bulk emails, delivering over <strong><u><i>500 million</i></u></strong> emails (w/ rate limiting, inboxing), for enterprise clients like <strong><i>State Bank of India</i></strong>, <strong><i>Flipkart</i></strong>, <strong><i>Axis Bank</i></strong> etc.</li>
+                    <li>Developed algorithms for email inboxing, while maintaining sustained throughput of <strong><u><i>45-50 million</i></u></strong> emails per hour.</li>
+                    <li>Designed and developed a low latency, event management pipeline for WhatsApp platform, which led to higher throughput and performance increase in delivery, webhook processing/delivery, and real-time reporting.</li>
+                    <li>Developed features for WhatsApp's message delivery pipeline, improving deliverability by <strong><i><u>30-45%</u></i></strong>, resulting in increased revenue, and a direct impact on enterprise clients like <strong><i>Reserve Bank of India</i></strong>, <strong><i>Bajaj Finserv District Ltd</i></strong>, <strong><i>The Souled Store</i></strong> etc.</li>
                 </ul>
                 <div class="padded">
                     Languages: <code>Golang</code>
-                    Other: <code>Docker \w compose | Redis | RabbitMQ | GCP | Elasticsearch | MySQL | Postgresql</code>
+                    Other: <code>Redis | RabbitMQ | Docker \w compose | GCP | Elasticsearch | MySQL | Postgresql</code>
                 </div>
             </section>
             <br />
@@ -303,11 +301,10 @@ vim:et:ts=4:sw=4
                 <br />
                 <u>Lead Software Engineer</u> (1 year 4 months)
                 <ul>
-                    <li>Led a team (4 frontend developers) into creating landing page and online store (Next.js, Framer-motion, Tailwind).</li>
+                    <li>Led a team (4 frontend developers), to build and launch an e-commerce store (Next.js, Framer-motion, Tailwind).</li>
+                    <li>Complete backend infrastructure, database architecture and system design for an online e-commerce platform with employee dashboard (Django \w golang microservices, HTMX).</li>
                     <li>Services for managing inventory, authentication, identity, profile, email/sms communication (Django \w golang microservices).</li>
-                    <li>Entire backend infrastructure, database architecture and system design for an online e-commerce store (Django \w golang microservices).</li>
-                    <li>Automating Shipment queues and customer communication (Django, AWS SQS, celery).</li>
-                    <li>In-house admin dashboard for the online store, (Django, HTMX).</li>
+                    <li>Automating Shipment and customer communication (Django, AWS SQS, celery, RabbitMQ).</li>
                     <li>Server maintenance, deployment pipeline etc for the online store (AWS, Docker \w compose)</li>
                 </ul>
                 <div class="padded">
@@ -318,8 +315,7 @@ vim:et:ts=4:sw=4
                 <br />
                 <u>Software Engineer Consultant</u> (8 months)
                 <ul>
-                    <li>Involved in designing software architecture for an e-commerce platform</li>
-                    <li>Code reviews and managing third party software engineering teams.</li>
+                    <li>Architecture and design for e-commerce platform, managing third party software engineering teams (code review etc).</li>
                 </ul>
             </section>
             <br />
@@ -334,7 +330,7 @@ vim:et:ts=4:sw=4
                 <br />
                 <ul>
                     <li>Led multiple small engineering teams (2-3 engineers each) for enhancing and maintaining internal tooling.</li>
-                    <li>Built a grading system which led to <strong><u><i>fully automated</i></u></strong> customer bookings workflow.</li>
+                    <li>Designed and built a grading system which led to <strong><u><i>fully automated</i></u></strong> customer bookings workflow.</li>
                     <li>Optimized primary VPS leading to monthly cost reduction up to <strong><i><u>60%</u></i></strong> (AWS).</li>
                     <li>Email, SMS, IVR, Ticketing automation and other third party integrations like payment gateway, background verification etc (python, js).</li>
                     <li>Built In-house email management tool using gmail api.</li>
@@ -348,9 +344,9 @@ vim:et:ts=4:sw=4
                 <br />
                 <u>Full-Stack Web Developer</u> <small>(~1.5 months)</small>
                 <ul>
-                    <li><span>Business Metric visualization tool (<u>used by operation and marketing team</u>).</span></li>
-                    <li><span>A Simple general purpose tabular report generation tool (<i><u><strong>the most used</strong></u> app by every team</i>).</span></li>
-                    <li><span>Restructured database architecture for payment calculations and aggregation automating <strong><u><i>~40%</i></u></strong> work (<u>used by finance team</u>).</span></li>
+                    <li><span>General purpose tabular report generation tool (<i><u><strong>the most used</strong></u> app by every team</i>).</span></li>
+                    <li><span>Architectural redesign for ledger management, automating <strong><u><i>~50%</i></u></strong> work involving payment aggregation, refunds, discounts and payouts. (<u>finance team</u>).</span></li>
+                    <li><span>Business Metric visualization tool (<u>operation and marketing team</u>).</span></li>
                 </ul>
                 <div class="padded">
                     Front-end: <code>ReactJs | AngularJs | JQuery | Javascript.</code>
@@ -362,13 +358,12 @@ vim:et:ts=4:sw=4
 
             <section>
                 <div class="kv highlight">
-                    <strong>Freelancer / Self employed (as a student).</strong>
+                    <strong>Freelancer (as a student).</strong>
                     <code>Mar 14 - Sep 17 (&gt; 3 years)</code>
                 </div><br />
                 <u>Script Writer and Web/Desktop App Developer</u>
                 <ul>
                     <li>Landing pages for events by various local communities.</li>
-                    <li>Website with voting mechanism for ganpati chaturthi.</li>
                     <li>Desktop GUI application for some local businesses.</li>
                     <li>Landing page with Custom CMS dashboard from ground up, for a startup (https://k3technologies.co.in).</li>
                 </ul>
@@ -385,13 +380,12 @@ vim:et:ts=4:sw=4
             <legend>
                 <h3>Education</h3>
             </legend>
-            <div><u>School</u>: <small>Grade: A (score: 85%)</small></div>
+            <div><u>School</u>: <small>Grade: A (85%)</small></div>
             <div>S.T.E.S's Sinhagad Public School (2010)</div>
-            <div><u>Higher Secondary School</u>: <small>(class 11<sup>th</sup>, 12<sup>th</sup>) Grade: A (score:
-                    72%)</small></div>
-            <div>S.T.E.S's Sinhagad Public School (Computer Science, Mathematics) (2012)</div>
-            <div><u>College</u>: <code>Grade: --</code> <small>(Dropped out 2<sup>nd</sup> year).</small></div>
-            <div>S.I.E.S Graduate School of Technology (Engineering - Computer Science)
+            <div><u>Higher Secondary School</u>: <small>Grade: A (72%)</small></div>
+            <div>S.T.E.S's Sinhagad Public School (PCM, Computer Science) (2012)</div>
+            <div><u>College</u>:</div>
+            <div>S.I.E.S Graduate School of Technology (Computer Science)
         </fieldset>
     </footer>
 </body>
